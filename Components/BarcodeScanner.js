@@ -11,6 +11,7 @@ export default function BarReader(props) {
 
   const handleBarCodeScanned = ({ type, data }) => {
     uuid = uuid + 1;
+
     const serialNumber = data;
 
     const scannedProduct = products.find(
